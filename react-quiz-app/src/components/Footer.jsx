@@ -1,7 +1,9 @@
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer style={{marginTop: "40px", padding: "10px", textAlign: "center"}}>
+      TechEdu Learning Center © 2025
+    </footer>
   )
 }
 
