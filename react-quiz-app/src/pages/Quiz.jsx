@@ -22,7 +22,20 @@ const Quiz = () => {
     }
   }
   return (
-    <div>Quiz</div>
+    <div style={{padding: "20px"}}>
+      <h2>Question {index+1}/ {questions.length}</h2>
+      <p>{current.question}</p>
+
+      {current.options.map((opt, i)=>(
+        <button 
+          key={i}
+          onClick={()=>handleAnswer(opt)}
+          style={{ display: "block", margin: "10px 0", padding: "10px" }}
+        >
+          {opt}
+        </button>
+      ))}
+    </div>
   )
 }
 
