@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-const Navbar = () => {
 
-  
+
+const Navbar = () => {
   return (
     <nav style={{padding: "15px", background: "#eee"}}>
         <Link to="/">Accueil</Link> || {" "}

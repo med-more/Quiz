@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import questions from "../data/questions"
 import { useState } from "react"
-const navigate = useNavigate();
+
 
 const Quiz = () => {
 
@@ -9,6 +9,7 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
 
   const current = questions[index];
+  const navigate = useNavigate();
 
   function handleAnswer(option){
     if (option === current.answer) {
