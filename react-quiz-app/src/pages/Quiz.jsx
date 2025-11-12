@@ -14,6 +14,8 @@ const Quiz = () => {
   function handleAnswer(option){
     if (option === current.answer) {
       setScore(score+1);
+      console.log(score);
+      
     }
 
     if (index + 1 < questions.length) {
