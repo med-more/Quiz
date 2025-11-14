@@ -18,8 +18,9 @@ const Quiz = () => {
       
     }
 
-    if (index + 1 < questions.length) {
+    if (index + 1  < questions.length) { //verify if the next ques exist in the table
       setIndex(index + 1)
+      /* console.log(index); */
     } else{
       navigate("/result", {state : {score, total: questions.length}})
     }
