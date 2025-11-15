@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom"
+
 const Home = () => {
   return (
-    <div style={{textAlign: "center", marginTop: "40px"}}>
-      <h1>Quiz App</h1>
-      <p>Teste tes connaissances en développement web !</p>
+    <div className="quiz-container">
+      <h1 style={{color: "#FC6E20"}}>TechEdu Learning Center</h1>
+      <p>Test Your Knowledge</p>
 
       <Link to="/quiz">
-        <button style={{padding: "10px 20px", marginTop: "20px"}}>
-          Commencer le quiz
+        <button className="start-btn">
+          Start Quiz
         </button>
       </Link>
     </div>
